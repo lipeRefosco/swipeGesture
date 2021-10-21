@@ -1,0 +1,49 @@
+:root{
+	--swipe-width: 100px;
+	--span-diameter: 50px;
+	--span-padding:  4px;
+}
+.swipe{
+	width: var(--swipe-width);
+	height: 100vh;
+	background-color: rgba(0,0,0,0.2);
+	color: #fff;
+	font-size: 24pt;
+	font-weight: bold;
+
+	/* Aling */
+	align-items: center;
+	text-align: center;
+	position: absolute;
+	top: 0;
+}
+.swipe span{
+	width: var(--span-diameter);
+	height: var(--span-diameter);
+	position: absolute;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: var(--span-padding);
+	border-radius: 100%;
+}
+
+.swipe#swipeAddonLeft{
+	left: 0;
+}
+.swipe#swipeAddonRight{
+	right: 0;
+}
+.swipe#swipeAddonLeft span{
+	top: calc( (100vh - var(--span-diameter) - (var(--span-padding) * 2) ) / 2 );
+	left: calc( (var(--swipe-width) - var(--span-diameter) - (var(--span-padding) * 2)) / 2);
+}
+.swipe#swipeAddonRight span{
+	top: calc( (100vh - var(--span-diameter) - (var(--span-padding) * 2) ) / 2 );
+	right: calc( (var(--swipe-width) - var(--span-diameter) - (var(--span-padding) * 2)) / 2);
+}
+.swipe#swipeAddonLeft span::before{
+	content: "<";
+}
+.swipe#swipeAddonRight span::before{
+	content: ">";
+}
