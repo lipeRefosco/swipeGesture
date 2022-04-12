@@ -1,0 +1,21 @@
+{
+
+    "manifest_version": 2,
+    "name": "swipeGesture",
+    "version": "1.0",
+  
+    "description": "Adds a red border to all webpages matching mozilla.org.",
+  
+    "icons": {
+        "128": "icons/icon.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*"],
+        "js": ["main.js"]
+      }
+    ]
+  
+  }
+  
