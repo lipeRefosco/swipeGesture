@@ -1,0 +1,25 @@
+{
+  "name": "swipegesture",
+  "version": "1.0.0",
+  "description": "Browser extension that enables 'Swipe' movement to browse history.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lipeRefosco/swipeGesture.git"
+  },
+  "keywords": [
+    "swipe",
+    "gesture",
+    "jsgeture",
+    "jswipe"
+  ],
+  "author": "Felipe Refosco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lipeRefosco/swipeGesture/issues"
+  },
+  "homepage": "https://github.com/lipeRefosco/swipeGesture#readme"
+}
